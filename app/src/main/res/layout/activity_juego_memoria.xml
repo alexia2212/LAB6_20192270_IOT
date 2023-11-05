@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3AFAF"
+    tools:context=".JuegoMemoria">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total de imágenes seleccionadas: 4"
+        android:textSize="21dp"
+        android:textColor="#E85285"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/buttonTitulo"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:text="El juego de la memoria"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#CF5D84"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/buttonAgregar"
+        android:layout_width="168dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#EDB91B"
+        android:text="+   Añadir Imagen"
+        android:textColor="#B88D0D"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="153dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"></LinearLayout>
+
+    <Button
+        android:id="@+id/buttonIniciarJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar Juego"
+        android:textSize="16dp"
+        android:textColor="#16887E"
+        android:textStyle="bold"
+        android:backgroundTint="#49C8BC"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="371dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
