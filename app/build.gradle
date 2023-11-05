@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.lab6_20192270'
-    compileSdk 33
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.example.lab6_20192270"
