@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.button.setOnClickListener(view ->{
-            Intent intent = new Intent(MainActivity.this, JuegoMemoria.class);
+            Intent intent = new Intent(MainActivity.this, JuegoPuzzle.class);
             startActivity(intent);
 
         });
         binding.button2.setOnClickListener(view ->{
-            Intent intent2 = new Intent(MainActivity.this, JuegoPuzzle.class);
+            Intent intent2 = new Intent(MainActivity.this, JuegoMemoria.class);
             startActivity(intent2);
         });
 
