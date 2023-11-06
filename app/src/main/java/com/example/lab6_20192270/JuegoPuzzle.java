@@ -15,5 +15,7 @@ public class JuegoPuzzle extends AppCompatActivity {
         binding = ActivityJuegoPuzzleBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+
     }
 }

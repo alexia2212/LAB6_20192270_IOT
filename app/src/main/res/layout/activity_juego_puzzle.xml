@@ -6,5 +6,52 @@
     android:layout_height="match_parent"
     android:background="#EFD37D"
     tools:context=".JuegoPuzzle">
+    <Button
+        android:id="@+id/buttonTitulo"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:text="PUZZLE"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#EAB720"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/buttonAgregarPuzzle"
+        android:layout_width="168dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#65F16B"
+        android:text="+   Añadir Imagen"
+        android:textColor="#19AF1F"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una imagen para iniciar el juego"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"  />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

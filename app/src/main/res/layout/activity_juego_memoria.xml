@@ -54,17 +54,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.21" />
 
-    <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="153dp"
-        android:orientation="horizontal"
-        android:background="@color/white"
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="355dp"
+        android:layout_height="146dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"></LinearLayout>
+        app:layout_constraintVertical_bias="0.34" />
 
     <Button
         android:id="@+id/buttonIniciarJuego"
@@ -82,7 +82,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"/>
+        app:layout_constraintVertical_bias="0.53"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
