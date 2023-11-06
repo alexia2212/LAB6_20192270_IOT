@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.lab6_20192270.databinding.ActivityJuegoPuzzleBinding;
@@ -17,6 +18,7 @@ import java.util.Random;
 public class JuegoPuzzle extends AppCompatActivity {
     private int[] images = {R.drawable.crashflotante, R.drawable.gato, R.drawable.perrosalchicha};
     private GridView gridView;
+    private ImageView imageViewCenter;
     private Button btnAgregarImagen;
     private ImagePagerAdapter imageAdapter;
     private int[] drawableIds;
@@ -50,6 +52,21 @@ public class JuegoPuzzle extends AppCompatActivity {
             }
         });
 
+        btnAgregarImagen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Obtén un número aleatorio para seleccionar una imagen del array
+                int randomIndex = getRandomImageNumber(images.length);
+
+                if (randomIndex >= 0 && randomIndex < images.length) {
+                    // Muestra la imagen seleccionada en el centro
+                    imageViewCenter.setImageResource(images[randomIndex]);
+                    imageViewCenter.setVisibility(View.VISIBLE);
+                } else {
+                    Toast.makeText(JuegoPuzzle.this, "No se pudo encontrar la imagen aleatoria", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
     private int getRandomImageNumber() {
