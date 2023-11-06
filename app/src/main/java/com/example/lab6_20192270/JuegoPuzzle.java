@@ -69,9 +69,9 @@ public class JuegoPuzzle extends AppCompatActivity {
         });
 
     }
-    private int getRandomImageNumber() {
+    private int getRandomImageNumber(int maxImages) {
         Random random = new Random();
-        int maxImageNumber = getResources().obtainTypedArray(R.array.drawable_images).length();
-        return random.nextInt(maxImageNumber) + 1;
+        return random.nextInt(maxImages);
     }
+
 }
